@@ -10,19 +10,19 @@ class Day1 {
         val pathname = "src/main/resources/inputFiles/day1_input"
         val inputStream: InputStream = File(pathname).inputStream()
 
-        var counter: Int = -1
-        var pDepth: Int = 0
+        var counter = -1
+        var pDepth = 0
         var depth: Int
 
         inputStream.bufferedReader().forEachLine {
             depth = it.toInt()
             if (depth > pDepth) {
-                counter += 1
+                counter++
             }
 
             pDepth = depth
         }
-        println("nr. larger: ${counter}")
+        println("nr. larger: $counter")
     }
 
 }
