@@ -2,6 +2,6 @@ import Day1.Day1
 
 fun main() {
 
-    val day = Day1('a')
+    val day = Day1('b')
     day.run()
 }
