@@ -7,7 +7,8 @@ class Day1 {
 
     fun run() {
 
-        val inputStream: InputStream = File("inputFiles/day1_input").inputStream()
+        val pathname = "src/main/resources/inputFiles/day1_input"
+        val inputStream: InputStream = File(pathname).inputStream()
 
         var counter: Int = -1
         var pDepth: Int = 0
