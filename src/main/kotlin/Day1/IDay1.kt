@@ -5,7 +5,7 @@ import java.io.InputStream
 
 abstract class IDay1(pathname: String) {
 
-    lateinit var inputStream: InputStream
+    var inputStream: InputStream
 
     var counter: Int = -1
     var depth: Int = 0
