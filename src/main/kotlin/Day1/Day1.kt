@@ -4,9 +4,9 @@ import java.io.File
 import java.io.InputStream
 
 
-class Day1(private val sP: Char) : IDay1 {
+class Day1(pathname:String ) : IDay1(pathname) {
 
-    override fun run() {
+     fun run() {
 
 
 

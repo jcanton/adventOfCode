@@ -12,7 +12,7 @@ abstract class IDay1(pathname:String ) {
     var depth: Int = 0
 
      init {
-          inputStream = File("pathname").inputStream()
+          inputStream = File(pathname).inputStream()
 
 
      }
