@@ -7,21 +7,6 @@ import java.io.InputStream
 class Day1b(pathname:String ) : IDay1(pathname) {
 
      fun run() {
-
-
-
-        if (sP == 'a') {
-
-            var pDepth = 0
-            inputStream.bufferedReader().forEachLine {
-                depth = it.toInt()
-                if (depth > pDepth) counter++
-
-                pDepth = depth
-            }
-
-        } else {
-
             val windowSize = 3
             val window = IntArray(windowSize) { 0 }
             var windowSum = 0
@@ -42,9 +27,6 @@ class Day1b(pathname:String ) : IDay1(pathname) {
 
                 pWindowSum = windowSum
             }
-
-        }
-
         println("nr. larger: $counter")
 
     }
