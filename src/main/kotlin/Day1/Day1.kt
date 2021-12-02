@@ -3,9 +3,6 @@ package Day1
 import java.io.File
 import java.io.InputStream
 
-interface IDay1 {
-    fun run()
-}
 
 class Day1(private val sP: Char) : IDay1 {
 
