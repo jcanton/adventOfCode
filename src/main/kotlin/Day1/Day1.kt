@@ -3,9 +3,13 @@ package Day1
 import java.io.File
 import java.io.InputStream
 
-class Day1(private val sP: Char) {
+interface IDay1 {
+    fun run()
+}
 
-    fun run() {
+class Day1(private val sP: Char) : IDay1 {
+
+    override fun run() {
 
         val pathname = "src/main/resources/inputFiles/day1_input"
         val inputStream: InputStream = File(pathname).inputStream()
