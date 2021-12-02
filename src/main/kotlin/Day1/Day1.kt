@@ -8,11 +8,7 @@ class Day1(private val sP: Char) : IDay1 {
 
     override fun run() {
 
-        val pathname = "src/main/resources/inputFiles/day1_input"
-        val inputStream: InputStream = File(pathname).inputStream()
 
-        var counter: Int = -1
-        var depth: Int
 
         if (sP == 'a') {
 
