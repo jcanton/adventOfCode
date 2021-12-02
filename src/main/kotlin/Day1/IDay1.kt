@@ -16,4 +16,6 @@ abstract class IDay1(pathname:String ) {
 
 
      }
+
+    abstract fun run()
 }

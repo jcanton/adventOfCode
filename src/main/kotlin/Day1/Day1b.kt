@@ -6,7 +6,7 @@ import java.io.InputStream
 
 class Day1b(pathname:String ) : IDay1(pathname) {
 
-     fun run() {
+     override fun run() {
             val windowSize = 3
             val window = IntArray(windowSize) { 0 }
             var windowSum = 0
