@@ -1,12 +1,10 @@
-import Day2.Day2
-import Day2.Day2a
-import Day2.Day2b
+import Day3.Day3
 
 fun main() {
-    val pathname = "src/main/resources/inputFiles/day2_input"
-    var day: Day2
-    day = Day2a(pathname)
+    val pathname = "src/main/resources/inputFiles/day3_input"
+    var day: Day3
+    day = Day3(pathname)
     day.run()
-    day = Day2b(pathname)
-    day.run()
+    //day = Day2b(pathname)
+    //day.run()
 }
