@@ -2,14 +2,14 @@ package Day2
 
 import java.io.File
 
-abstract class Day2(pathName: String) {
+abstract class Day2(pathname: String) {
     var commandList: List<String>
     var horizontal: Int = 0
     var depth: Int = 0
     var aim: Int = 0
 
     init {
-        commandList = File(pathName).inputStream().bufferedReader().readLines()
+        commandList = File(pathname).inputStream().bufferedReader().readLines()
     }
 
     private fun dive(commandList: List<String>) {
