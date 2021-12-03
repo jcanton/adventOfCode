@@ -2,11 +2,15 @@ package Day2
 
 import java.io.File
 
-class Day2(pathName: String) {
+abstract class Day2(pathName: String) {
+    var commandList: List<String>
     var horizontal: Int = 0
     var depth: Int = 0
+    var aim: Int = 0
 
-    val commandList = File(pathName).inputStream().bufferedReader().readLines()
+    init {
+        commandList = File(pathName).inputStream().bufferedReader().readLines()
+    }
 
     private fun dive(commandList: List<String>) {
         var direction: String
@@ -18,13 +22,7 @@ class Day2(pathName: String) {
         }
     }
 
-    private fun move(direction: String, value: Int) {
-        when(direction) {
-            "forward" -> horizontal += value
-            "down" -> depth += value
-            "up" -> depth -= value
-        }
-    }
+    abstract fun move(direction: String, value: Int)
 
     fun run(): Int {
         dive(commandList)
