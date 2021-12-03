@@ -1,7 +1,7 @@
 package Day1
 
 
-class Day1b(pathname: String) : IDay1(pathname) {
+class Day1b(pathname: String) : Day1(pathname) {
 
     override fun run() {
         val windowSize = 3
@@ -13,10 +13,12 @@ class Day1b(pathname: String) : IDay1(pathname) {
 
             // update window
             windowSum -= window[0]
-            window[0] = window[1]
-            window[1] = window[2]
-            window[2] = depth
-            windowSum += window[2]
+            for (i: Int in 0..windowSize-2) {
+                window[i] = window[i+1]
+            }
+            window[windowSize-1] = depth
+            windowSum += window[windowSize-1]
+
             // update counter if window is full (skip the starting `windowSize`)
             // and > previous window
             if (window[0] > 0 && windowSum > pWindowSum) counter++
