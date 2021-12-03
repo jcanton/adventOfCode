@@ -3,7 +3,7 @@ package Day1
 
 class Day1b(pathname: String) : Day1(pathname) {
 
-    override fun countInc(): Int {
+    override fun run(): Int {
         val windowSize = 3
         val window = IntArray(windowSize) { 0 }
         var windowSum = 0

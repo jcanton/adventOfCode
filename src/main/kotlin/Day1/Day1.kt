@@ -14,5 +14,5 @@ abstract class Day1(pathname: String) {
         inputStream = File(pathname).inputStream()
     }
 
-    abstract fun countInc(): Int
+    abstract fun run(): Int
 }
