@@ -1,7 +1,7 @@
 import Day1.Day1
 
-fun main(args: Array<String>) {
+fun main() {
 
-    val day = Day1()
+    val day = Day1('b')
     day.run()
 }
