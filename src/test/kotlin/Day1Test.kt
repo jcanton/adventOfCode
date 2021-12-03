@@ -9,7 +9,7 @@ internal class Day1Test {
 
     @Test
     fun givenFileProducesRightCount() {
-        assertEquals(1559, Day1a(pathname).countInc())
-        assertEquals(1600, Day1b(pathname).countInc())
+        assertEquals(1559, Day1a(pathname).run())
+        assertEquals(1600, Day1b(pathname).run())
     }
 }

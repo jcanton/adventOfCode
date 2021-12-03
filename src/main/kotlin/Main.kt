@@ -1,12 +1,12 @@
-import Day1.Day1
-import Day1.Day1a
-import Day1.Day1b
+import Day2.Day2
+import Day2.Day2a
+import Day2.Day2b
 
 fun main() {
-    val pathname = "src/main/resources/inputFiles/day1_input"
-    var day1: Day1
-    day1 = Day1a(pathname)
-    day1.countInc()
-    day1 = Day1b(pathname)
-    day1.countInc()
+    val pathname = "src/main/resources/inputFiles/day2_input"
+    var day: Day2
+    day = Day2a(pathname)
+    day.run()
+    day = Day2b(pathname)
+    day.run()
 }
