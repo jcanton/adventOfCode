@@ -3,7 +3,7 @@ package Day1
 
 class Day1b(pathname: String) : Day1(pathname) {
 
-    override fun run() {
+    override fun run(): Int {
         val windowSize = 3
         val window = IntArray(windowSize) { 0 }
         var windowSum = 0
@@ -13,11 +13,11 @@ class Day1b(pathname: String) : Day1(pathname) {
 
             // update window
             windowSum -= window[0]
-            for (i: Int in 0..windowSize-2) {
-                window[i] = window[i+1]
+            for (i: Int in 0..windowSize - 2) {
+                window[i] = window[i + 1]
             }
-            window[windowSize-1] = depth
-            windowSum += window[windowSize-1]
+            window[windowSize - 1] = depth
+            windowSum += window[windowSize - 1]
 
             // update counter if window is full (skip the starting `windowSize`)
             // and > previous window
@@ -26,6 +26,7 @@ class Day1b(pathname: String) : Day1(pathname) {
             pWindowSum = windowSum
         }
         println("nr. larger: $counter")
+        return counter
 
     }
 }
