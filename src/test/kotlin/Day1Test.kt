@@ -1,7 +1,7 @@
-package Day1
-
-import org.junit.Test
+import Day1.Day1a
+import Day1.Day1b
 import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Test
 
 
 internal class Day1Test {
