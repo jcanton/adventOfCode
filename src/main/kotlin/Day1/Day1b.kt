@@ -1,7 +1,7 @@
 package Day1
 
 
-class Day1b(pathname: String) : IDay1(pathname) {
+class Day1b(pathname: String) : Day1(pathname) {
 
     override fun run() {
         val windowSize = 3

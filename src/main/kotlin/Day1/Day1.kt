@@ -3,7 +3,7 @@ package Day1
 import java.io.File
 import java.io.InputStream
 
-abstract class IDay1(pathname: String) {
+abstract class Day1(pathname: String) {
 
     var inputStream: InputStream
 

@@ -1,7 +1,7 @@
 package Day1
 
 
-class Day1a(pathname: String) : IDay1(pathname) {
+class Day1a(pathname: String) : Day1(pathname) {
 
     override fun run() {
         var pDepth = 0
