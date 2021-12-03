@@ -3,7 +3,7 @@ package Day1
 
 class Day1a(pathname: String) : Day1(pathname) {
 
-    override fun run(): Int {
+    override fun countInc(): Int {
         var pDepth = 0
         inputStream.bufferedReader().forEachLine {
             depth = it.toInt()
